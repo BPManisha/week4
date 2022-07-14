@@ -24,32 +24,6 @@ function balancedParens(str) {
     console.log(" check your opening and closing parenthisis")
   return openPar === closedPar
 
-
-
-
-  ///andrew Elliot
-  const balanced = (string) => {
-    const charArray = string.split("");
-    const stack = [];
-
-    for(let i = 0; i < charArray.length; i++) {
-        if(charArray[i] === "(") {
-            stack.push(charArray[i]);
-        } else if(charArray[i] === ")") {
-            if(stack.length === 0) {
-                return false;
-            }
-            stack.pop();
-        }
-    }
-
-    if(stack.length !== 0) {
-        return false;
-    }
-
-    return true;
-}
-
 }
 //invoke the function 
 //its time to test it.
